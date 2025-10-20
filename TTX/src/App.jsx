@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+//import React, { useState, useEffect, useContext } from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import "./App.css";
 
@@ -9,6 +9,8 @@ import Dashboard from "./pages/dashboard/dashboardFeatures/dashboard";
 import GameInstructions from "./pages/dashboard/dashboardFeatures/gameInstructions";
 import ThreatSelect from "./pages/dashboard/dashboardFeatures/threatselect";
 import TTXGame from "./pages/dashboard/dashboardFeatures/startgame";
+import RegisterPage from "./pages/dashboard/registerPage";
+import LoginPage from "./pages/dashboard/loginPage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         {/* Landing Page */}
         <Route path="/" element={<Landing />} />
         <Route path="/SetUp" element={<SetUp />} />
+        <Route path="/register" element={<RegisterPage />}/>
+        <Route path="/login" element={<LoginPage/>}/>
 
         {/* Dashboard Page */}
         <Route path="/Dashboard">
