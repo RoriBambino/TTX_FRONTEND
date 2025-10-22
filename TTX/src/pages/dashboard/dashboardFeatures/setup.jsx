@@ -11,7 +11,7 @@ export default function setUp() {
     navigate("/Dashboard");
   };
   return (
-    <div className="bg-white text-black w-screen h-screen p-10 ">
+    <div className="bg-white text-black w-screen h-screen p-10 overflow-auto">
       {/* Header */}
       <div className=" text-center justify-center pt-15">
         <div>

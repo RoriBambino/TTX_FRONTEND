@@ -76,10 +76,10 @@ export default function dashboard() {
 
       {/* Start Game Button */}
       <div className=" justify-center text-center items-center pt-20">
-        <button className="btn bg-green-400 hover:bg-white hover:text-black w-xl h-1/2 rounded-lg">
+        <button className="btn bg-green-400 hover:bg-gray-300 text-white hover:text-black  w-xl h-1/2 rounded-lg">
           <button
             onClick={() => startGameHandler()}
-            className="text-3xl text-white hover:text-black font-bold"
+            className="text-3xl font-bold"
           >
             Start Game
           </button>
