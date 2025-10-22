@@ -12,7 +12,7 @@ export default function StartGame() {
   const threats = ["Threat 1", "Threat 2", "Threat 3", "Threat 4", "Threat 5"];
 
   return (
-    <div className="bg-gray-100 text-black w-full  min-h-screen p-5 overflow-auto">
+    <div className="bg-gray-100 text-black w-full  min-h-screen  overflow-clip">
       {/* Team Names */}
       <div
         className="flex flex-row justify-center  items-center pt-5 pb-10  font-medium text-linear
@@ -22,7 +22,7 @@ export default function StartGame() {
         <h1 className="">{TeamNames}</h1>
       </div>
       {/* IMG */}
-      <div className="flex justify-center items-center ">
+      <div className="fix flex justify-center items-center ">
         <img
           src={Board}
           alt="Board Image"
@@ -39,7 +39,7 @@ export default function StartGame() {
         </div>
       </div>
       {/* Drag and Drop Area */}
-      <div className="absolute top-40 z-50 w-full left-0 ">
+      <div className="absolute top-40 z-50 w-full left-0  ">
         <div className="">
           {/* Threat Agents Box */}
           <DropCards />
